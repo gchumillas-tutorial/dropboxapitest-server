@@ -7,16 +7,27 @@ use mimbre\http\json\JsonController;
 use mimbre\http\data\HttpCookie;
 use models\UserModel;
 
+/**
+ * This controller registers the user into the system.
+ */
 class AuthLoginController extends JsonController
 {
     private $_db;
 
+    /**
+     * Constructor.
+     */
     public function __construct()
     {
         $this->_db = new MySqlConnection(DB_NAME, DB_USER, DB_PASS, DB_HOST);
         $this->onPost([$this, "post"]);
     }
 
+    /**
+     * POST request handler.
+     *
+     * @return void
+     */
     public function post()
     {
         $state = $this->getParam("state", ["required" => true]);
