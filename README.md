@@ -3,6 +3,9 @@
 Back-End application of Dropbox API Test. To see the Front-End application visit the following link:  
 https://github.com/gchumillas-tutorial/dropboxapitest-client
 
+You can find a video tutorial in Spanish here:  
+https://youtu.be/rQsOPS9rT1s
+
 ## Install
 
 Clone the project and install the libraries:
