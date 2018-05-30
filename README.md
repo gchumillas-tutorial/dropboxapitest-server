@@ -1,6 +1,6 @@
 # Dropbox API Test (back-end)
 
-Back-end
+Back-end application of Dropbox API Test.
 
 ## Install
 
@@ -30,9 +30,16 @@ Copy `config-sample.php` to `config.php` and change it.
 
 Navigate to the Apache2 `sites-available` folder:
 ```bash
+sudo su
 cd /etc/apache2/sites-available
 ```
 
-And use the following template to create a Virtual Host (use localhost for the ServerName option):  
+Copy the following template in `localhost.conf`:  
 https://gist.github.com/gchumillas/b70e6876d9ce40d617d31722279858cc
 
+Rename ServerName by `localhost` and change the rest of the options. And finally enable the virtual host and reload Apache2:
+
+```bash
+a2ensite localhost.conf
+service apache2 reload
+```
