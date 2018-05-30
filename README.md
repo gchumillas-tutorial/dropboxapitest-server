@@ -1,6 +1,7 @@
-# Dropbox API Test (back-end)
+# Dropbox API Test (Back-End)
 
-Back-end application of Dropbox API Test.
+Back-End application of Dropbox API Test. To see the Front-End application visit the following link:  
+https://github.com/gchumillas-tutorial/dropboxapitest-client
 
 ## Install
 
